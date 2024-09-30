@@ -1,0 +1,128 @@
+We are learning Linux commands for the first time
+pwd: present working directory
+ls: list directory contents
+touch: creates a file in the present directory
+cat: view the contents of a file
+clear: clears terminal
+tail: Shows the bottom part of the file
+head: Shows the top part of the file
+which: to check where a command is stored
+info: information about a command
+man: Opens up a manual about a command
+q: to quit
+mkdir: Make a new directory
+cd: change directory
+cd ..: goes back a step
+cd folder_name: takes you inside a folder
+cd folderpath: takes you to a folder (cd /home/DevOps_folder/inside_folder/second_inside_folder
+flags (-): to get more functional details of a code
+-l: gives more details of a list or use a long listing format
+-a: do not ignore all entries starting with .
+ls -la: Shows a long list as well as the hidden folders
+rmdir: remove folder one at a time
+rm -r(recursive) folder: To delete an entire directory
+cp (copy): copy file from one folder to the other e.g cp DevOps Desktop/
+rm DevOps: to delete the DevOps file within the folder
+mv (move or rename): to move a file to another folder or rename a file
+mv filename ~/home: to move a file to home
+mv oldname newname: to rename a file inside a directory
+mv foldername/oldfilename foldername/newfilename: to rename file form home
+echo ($): to repeat or print
+variable: use to assign value to an unknown object
+mkdir -p folder1/folder2/etc: to create multiple folders
+-L: to show more details 
+tree foldername: to view tree structure of the folders
+tree -L 1: to view level one of the folder
+tree / -L 1: shows level one of all folders including hidden folders
+bin (binary): all binary files in the system are stored here
+boot: all functionality of booting the operating system is stored here
+cdrom: files mounted on the system is stored here (media, disks)
+dev (device): where the device files are located. drivers
+etc: config file for programs and applications are saved here
+home: where user specific files are saved
+lib (libraries): where all the libraries are saved
+lost+found: recovered files are saved here
+opt(optional): self created applications and files are saved here
+proc (processes): background running files or processes are stored here
+ls -L /proc | grep 5212: to grip a process file
+root: home folder for the root user 
+sudo: for administrative right
+sudo apt update: to update package list
+sudo apt install tree: to install tree view
+sudo apt remove tree: to remove tree software
+run: where temporary data used for processing are stored
+df (diskfree): to view the storage system
+free: to see the available memory of the system
+snap: files that are installed with snap are stored here
+sys (system): data that kernel OS uses in operating are saved here
+tmp:files that are related to the disk 
+usr: program libraries are stored
+var: Writing data during the course of running an application
+wget:  to download a file
+curl: to download and name a file. curl file_url --output rename.format
+vim: to open and edit file.
+i: to open editor mode.
+esc: to leave editor mode
+:wq: save and exit
+:ql: exit without save
+j: Move the cursor down one line.
+o: Open a new line below the current line and switch to Insert mode.
+O: Open a new line above the current line and switch to Insert mode.
+:w: save without exit
+:recover or vim -r DevOps: to recover unsaved file
+diff: to get the difference btw 2 files
+useradd: to add a new user
+id: to view user id
+sudo useradd -m username: to create a user and organise in the home directory
+sudo passwd username: to create a password for a new user
+grep: to grip specific item from a file. cat filename.filetype | grep item
+history: to check the list of all the commands ran
+groupadd: to create a group. sudo groupadd group_name
+grep group_name /etc/group: to get the created group id
+sudo usermod -aG group_name: to assign a user to a group
+sudo mkdir /home/user: to create a folder for user in home directory
+chmod: allows you to modify file permissions
+chown user:group /home/user: to assign group ownership of folder the group
+id user: to view the groups a user is assigned
+userdel: to delete a user. sudo userdel user
+- in front of a resource indicates a file
+d in front of a resource indicates a folder
+rwx rwx r-x: 1st 3 permission is for user, 2nd 3 is for group, last 3 is for any other. r-read, w-write, x-execute
+ls -latr filename: check file permission
+chown: allows you to change ownership of files, directories, or symbolic links to a specified username or group.
+chmod: modify permission
+chmod +x filename: to add execution permission to a file
+ls -l .home: show each user's home directory and the permissions associated with it.
+read: to collect input
+$: to assign variable value
+read: collects users input
+=: assignment operator
+#!/bin/bash: to indicate a shell script
+.sh: indicates a bash file
+./filename.sh: to execute a bash file or script
+if else statement: to check if a condition is met and carryout required rule if it does or not.
+if [ -d test-directory ]; then
+	echo "Directory exists"
+else
+	mkdir test-directory
+	echo "Directory created"
+fi
+This statement checks if the directory exists and echo the required command else create the directory and echo the command.
+for loop statement: runs through a loop until cycle completes
+for user in jude sloan rochelle
+do
+	sudo useradd $user
+done
+git clone repo_url: to clone a git repository
+git status: to check for staged changes
+git add .: to stage all git file in the folder
+git add filename: to stage a file
+git commit -m "commit description": to commit a git file and description
+git push origin branch_name: to push the committed git file to a remote branch
+git branch: to check current branch
+git checkout: to checkout of current branch
+git checkout -b New_branch_name: to create and move to a new branch
+git remote set-url origin: to grant access to grant access to a remote repo
+git config --global user.email "you@example.com": to configure your user email id for git commit and push
+git config --global user.name "Your Name": to configure username
+
